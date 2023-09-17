@@ -4,11 +4,15 @@ import './App.css'
 
 
 
+
 	
 const API_URL ='/data.json'
 
 
 export default function App() {
+	useEffect(()=>{
+		document.title = "TikTok-Clone"
+	})
 	const [videos, setVideos] = useState([])
 
 	useEffect(() => {
